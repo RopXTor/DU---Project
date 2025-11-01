@@ -1,0 +1,92 @@
+[Ticker_StockMarkets_Config]
+StockMarkets = ["^STOXX50E", "^FCHI", "^GDAXI", "^IBEX"]
+
+
+[Config_Streamlit]
+Title_Page = "Project - DU"
+Reglementation = "Document simplifié et non contractuel, destiné à être remis exclusivement aux porteurs de parts. Investir implique des risques : les actions des OPC sont soumises aux fluctuations du marché, les investissements réalisés peuvent donc varier tant à la baisse qu’à la hausse."
+Title_Stat = "Statistiques Principales du fonds"
+Disclaimer = "Le fonds n'offre aucune garantie de rendement ou de performance et présente un risque de perte en capital"
+Warning = "Ces performances sont calculées hors frais de gestion."
+
+
+[Config_Graph_EU]
+Title = "Overview of the main European indices"
+x_label = "Date"
+y_label = "Base 100"
+
+
+[Config__Graph_Fund]
+Title_Page = "Fund & Benchmark Performance"
+Title_Plot = " vs Benchmark Performance"
+x_label = "Date"
+y_label = "Base 100"
+
+
+[ALL_Fund]
+Fund_1 = "Fund_1"
+Fund_2 = "Fund_2"
+Fund_3 = "Fund_3"
+
+
+[Fund_1]
+begin_date = "2021-06-01"
+benchmark = "^STOXX50E"
+stock = ["AIR.PA", "VOW3.DE", "IBE.MC", "BNP.PA"]
+weight = [0.25,0.1,0.35,0.3]
+Name_Fund = "Fund_France"
+Name_Bench = "Euro Stoxx 50"
+Color_fund = "red"
+Color_bench = "gray"
+Isin = "Part I - FR0000000000"
+Fees = "1,00%"
+Juridique = "SICAV"
+BBG = "YYYYYYY"
+Valo = "Quotidienne"
+Devise = "EUR"
+Centralisation = "J avant 11h (BPSS LUX)"
+
+
+[Fund_2]
+begin_date = "2022-03-01"
+benchmark = "^STOXX50E"
+stock = ["CBK.DE", "EOAN.DE", "SAF.PA", "BBVA.MC"]
+weight = [0.2,0.3,0.4,0.1]
+Name_Fund = "Fund_Germany"
+Name_Bench = "Euro Stoxx 50"
+Color_fund = "blue"
+Color_bench = "gray"
+Isin = "Part I - DE0000000000"
+Fees = "1,00%"
+Juridique = "SICAV"
+BBG = "XXXXXXX"
+Valo = "Quotidienne"
+Devise = "EUR"
+Centralisation = "J avant 11h (BPSS LUX)"
+
+
+[Fund_3]
+begin_date = "2021-09-01"
+benchmark = "^STOXX50E"
+stock = ["FER.MC", "SIE.DE", "SLR.MC", "HO.PA"]
+weight = [0.25,0.25,0.25,0.25]
+Name_Fund = "Fund_Spain"
+Name_Bench = "Euro Stoxx 50"
+Color_fund = "green"
+Color_bench = "gray"
+Isin = "Part I - SP00000000000"
+Fees = "1,00%"
+Juridique = "SICAV"
+BBG = "ZZZZZZZ"
+Valo = "Quotidienne"
+Devise = "EUR"
+Centralisation = "J avant 11h (BPSS LUX)"
+
+
+[risk_free]
+rf_EU = 0.0251
+rf_US = 0.0414
+
+
+[parameters_trading]
+trading_days = 252
